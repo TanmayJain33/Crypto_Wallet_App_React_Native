@@ -9,7 +9,7 @@ import TabIcon from '../components/TabIcon';
 import icons from '../constants/icons';
 import {TouchableOpacity} from 'react-native';
 import {connect} from 'react-redux';
-import {setTradeModalVisibility} from '../stores/tabAction';
+import {setTradeModalVisibility} from '../stores/tabs/tabAction';
 
 const Tab = createBottomTabNavigator();
 
