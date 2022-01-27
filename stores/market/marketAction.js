@@ -51,8 +51,6 @@ export function getHoldings(
       },
     })
       .then(response => {
-        console.log('GetHoldings');
-        console.log(response);
         if (response.state == 200) {
           //Massage Data
           let myHoldings = response.data.map(item => {
@@ -130,8 +128,6 @@ export function getCoinMarket(
       },
     })
       .then(response => {
-        console.log('GetCoinMarket');
-        console.log(response);
         if (response.state == 200) {
           dispatch(getCoinMarketSuccess(response.data));
         } else {
